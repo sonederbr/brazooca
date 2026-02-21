@@ -1,1081 +1,580 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brazooca Rock Club - Bringing 80s and 90s Brazilian Rock back to life. Book us for your bar, pub, or event.">
-    <meta name="keywords" content="Brazilian rock band, 80s music, 90s music, live music, bar entertainment, event booking">
-    <meta name="author" content="Brazooca Rock Club">
-    <meta name="theme-color" content="#FF1493">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Brazooca Rock Club - 80s & 90s Brazilian Rock">
-    <meta property="og:description" content="Experience the nostalgia of 80s and 90s Brazilian rock music. Book Brazooca Rock Club for your venue.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brazooca.com">
-    <meta property="og:image" content="https://brazooca.com/sampletologo.jpeg">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Brazooca Rock Club - 80s & 90s Brazilian Rock">
-    <meta name="twitter:description" content="Experience the nostalgia of 80s and 90s Brazilian rock music.">
-    <meta name="twitter:image" content="https://brazooca.com/sampletologo.jpeg">
-    
-    <!-- Canonical and Alternate Links -->
-    <link rel="canonical" href="https://brazooca.com/">
-    <link rel="alternate" hreflang="en-GB" href="https://brazooca.com/">
-    <link rel="alternate" hreflang="pt-PT" href="https://brazooca.com/?lang=pt-PT">
-    <link rel="alternate" hreflang="es" href="https://brazooca.com/?lang=es">
-    <link rel="alternate" hreflang="x-default" href="https://brazooca.com/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="./sampletologo.jpeg">
-    
-    <!-- Google Fonts - 80s Retro -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Righteous&display=swap" rel="stylesheet">
-    
-    <title>Brazooca Rock Club - 80s & 90s Brazilian Rock | Book Us Now</title>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!doctype html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazooca Rock Club | Nostalgic Brazilian Rock 80s &#x26; 90s Band</title>
+  <meta name="description" content="Bring the electric energy of 80s and 90s Brazilian Rock to your venue. Brazooca Rock Club is the ultimate live band for bars, pubs, and events. Book now.">
+  <link rel="canonical" href="https://brazooca.com">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brazooca.com">
+  <meta property="og:title" content="Brazooca Rock Club | Nostalgic Brazilian Rock 80s &#x26; 90s">
+  <meta property="og:description" content="The best of Brazilian 80s &#x26; 90s rock. Live band available for booking in bars, pubs, and private events.">
+  <meta property="og:image" content="https://brazooca.com/sampletologo.jpeg">
 
-        html {
-            scroll-behavior: smooth;
-        }
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://brazooca.com">
+  <meta property="twitter:title" content="Brazooca Rock Club | Live Brazilian Rock Band">
+  <meta property="twitter:description" content="Relive the golden age of Brazilian rock. Book Brazooca Rock Club for your next event.">
+  <meta property="twitter:image" content="https://brazooca.com/sampletologo.jpeg">
 
-        body {
-            font-family: -apple-system-font, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #0a0e27 0%, #1a0a2e 50%, #16213e 100%);
-            background-attachment: fixed;
-            color: #fff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Neon 80s Color Palette */
-        :root {
-            --neon-pink: #FF1493;
-            --neon-cyan: #00FFFF;
-            --neon-purple: #9D00FF;
-            --neon-yellow: #FFFF00;
-            --dark-bg: #0a0e27;
-            --accent-bg: #1a0a2e;
-        }
-
-        /* Header & Navigation */
-        header {
-            background: rgba(10, 14, 39, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid var(--neon-cyan);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            height: 50px;
-            width: auto;
-            filter: drop-shadow(0 0 10px var(--neon-pink));
-        }
-
-        .nav-right {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
-        }
-
-        .nav-links a:hover {
-            color: var(--neon-pink);
-            text-shadow: 0 0 20px var(--neon-pink);
-        }
-
-        .lang-switcher {
-            display: flex;
-            gap: 0.5rem;
-            background: rgba(255, 20, 147, 0.1);
-            border: 1px solid var(--neon-pink);
-            border-radius: 5px;
-            padding: 0.5rem;
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            border-radius: 3px;
-        }
-
-        .lang-btn.active {
-            background: var(--neon-pink);
-            color: #000;
-            box-shadow: 0 0 10px var(--neon-pink);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(157, 0, 255, 0.1)),
-                        linear-gradient(to bottom, rgba(0, 255, 255, 0.05), transparent);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255, 20, 147, 0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float 20s infinite ease-in-out;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50%;
-            left: -50%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(157, 0, 255, 0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float 25s infinite ease-in-out reverse;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-        }
-
-        .hero-logo {
-            height: 200px;
-            width: auto;
-            margin-bottom: 2rem;
-            filter: drop-shadow(0 0 30px var(--neon-pink));
-            animation: fadeInDown 0.8s ease;
-        }
-
-        .hero h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan), var(--neon-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
-            animation: fadeInUp 0.8s ease 0.2s backwards;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            font-family: 'Audiowide', sans-serif;
-            margin-bottom: 2rem;
-            color: var(--neon-cyan);
-            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-            animation: fadeInUp 0.8s ease 0.4s backwards;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease 0.6s backwards;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            font-size: 1rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: left 0.3s ease;
-            z-index: -1;
-        }
-
-        .btn:hover::before {
-            left: 100%;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--neon-pink), #FF69B4);
-            color: #000;
-            box-shadow: 0 0 20px var(--neon-pink);
-        }
-
-        .btn-primary:hover {
-            box-shadow: 0 0 40px var(--neon-pink), 0 0 20px rgba(255, 20, 147, 0.5);
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--neon-cyan);
-            border: 2px solid var(--neon-cyan);
-            box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
-        }
-
-        .btn-secondary:hover {
-            background: var(--neon-cyan);
-            color: #000;
-            box-shadow: 0 0 30px var(--neon-cyan);
-        }
-
-        /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(30px, -30px) rotate(90deg); }
-            50% { transform: translate(0, -60px) rotate(180deg); }
-            75% { transform: translate(-30px, -30px) rotate(270deg); }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&#x26;family=Orbitron:wght@700;900&#x26;display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Orbitron', 'sans-serif'],
+          },
+          colors: {
+            neon: {
+              pink: '#ff00ff',
+              blue: '#00ffff',
+              purple: '#9d00ff',
+              dark: '#0f0f1a'
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+          }
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes glow {
-            0%, 100% { text-shadow: 0 0 10px currentColor; }
-            50% { text-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 3rem;
-            text-align: center;
-            background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-cyan), transparent);
-            margin: 2rem 0;
-        }
-
-        /* Story Section */
-        .story {
-            background: rgba(26, 10, 46, 0.5);
-            border-radius: 10px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 20, 147, 0.3);
-        }
-
-        .story p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Members Section */
-        .members-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .member-card {
-            background: rgba(26, 10, 46, 0.6);
-            border: 1px solid rgba(157, 0, 255, 0.3);
-            border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .member-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.1), transparent);
-            transform: rotate(45deg);
-            transition: all 0.5s;
-        }
-
-        .member-card:hover::before {
-            animation: shine 0.6s;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .member-card:hover {
-            border-color: var(--neon-pink);
-            box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
-            transform: translateY(-10px);
-        }
-
-        .member-card h3 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--neon-pink);
-        }
-
-        .member-role {
-            color: var(--neon-cyan);
-            font-family: 'Audiowide', sans-serif;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .member-bio {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        /* Media Section */
-        .media-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-
-        .video-container {
-            background: rgba(26, 10, 46, 0.6);
-            border: 1px solid rgba(0, 255, 255, 0.3);
-            border-radius: 10px;
-            padding: 2rem;
-            overflow: hidden;
-        }
-
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 5px;
-        }
-
-        lite-youtube {
-            display: block;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Playlist Section */
-        .playlist {
-            background: rgba(26, 10, 46, 0.6);
-            border: 1px solid rgba(157, 0, 255, 0.3);
-            border-radius: 10px;
-            padding: 2rem;
-        }
-
-        .playlist-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .playlist-link {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.2), rgba(157, 0, 255, 0.2));
-            border: 1px solid var(--neon-pink);
-            border-radius: 8px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .playlist-link:hover {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.4), rgba(157, 0, 255, 0.4));
-            box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
-            transform: scale(1.05);
-        }
-
-        .playlist-link h3 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--neon-cyan);
-        }
-
-        /* Booking Section */
-        .booking {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.15), rgba(0, 255, 255, 0.1));
-            border: 2px solid var(--neon-pink);
-            border-radius: 10px;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        .booking h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .booking p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .contact-methods {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-method {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        /* Footer */
-        footer {
-            background: rgba(10, 14, 39, 0.95);
-            border-top: 2px solid var(--neon-cyan);
-            padding: 2rem;
-            text-align: center;
-            margin-top: 4rem;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-        }
-
-        footer p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 0.5rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            color: var(--neon-pink);
-            text-decoration: none;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            color: var(--neon-cyan);
-            text-shadow: 0 0 10px var(--neon-cyan);
-        }
-
-        /* Scroll Reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-            transition: all 0.6s ease;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem;
-            }
-
-            nav {
-                flex-wrap: wrap;
-                gap: 1rem;
-            }
-
-            .logo {
-                height: 40px;
-            }
-
-            .nav-links {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                width: 100%;
-                background: rgba(10, 14, 39, 0.95);
-                border-radius: 8px;
-                padding: 1rem 0;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                z-index: 1001;
-            }
-
-            .nav-links a {
-                font-size: 0.9rem;
-            }
-
-            .lang-switcher {
-                order: 3;
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            section h2 {
-                font-size: 1.8rem;
-            }
-
-            .btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-        }
-    </style>
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <style>
+    body {
+      background-color: #0f0f1a;
+      color: #ffffff;
+    }
+    .neon-text {
+      text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    }
+    .glass-nav {
+      background: rgba(15, 15, 26, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <img src="./sampletologo.jpeg" alt="Brazooca Logo" class="logo" loading="lazy">
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="#members" data-i18n="nav.members">Members</a></li>
-                    <li><a href="#media" data-i18n="nav.media">Media</a></li>
-                    <li><a href="#booking" data-i18n="nav.booking">Booking</a></li>
-                </ul>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="en-GB">EN</button>
-                    <button class="lang-btn" data-lang="pt-PT">PT</button>
-                    <button class="lang-btn" data-lang="es">ES</button>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="antialiased overflow-x-hidden">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="./sampletologo.jpeg" alt="Brazooca Rock Club" class="hero-logo" loading="lazy">
-            <h1 data-i18n="hero.title">Brazooca Rock Club</h1>
-            <p data-i18n="hero.subtitle">Bringing 80s & 90s Brazilian Rock Back to Life</p>
-            <div class="cta-buttons">
-                <a href="#booking" class="btn btn-primary" data-i18n="hero.bookNow">Book Now</a>
-                <a href="#media" class="btn btn-secondary" data-i18n="hero.discover">Discover Our Sound</a>
-            </div>
+  <!-- Header -->
+  <header class="fixed w-full top-0 z-50 glass-nav transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-neon-pink to-neon-blue p-0.5">
+          <img src="sampletologo.jpeg" alt="Brazooca Logo" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform">
         </div>
-    </section>
+        <span class="font-display font-bold text-xl tracking-wider text-white group-hover:text-neon-blue transition-colors">
+          BRAZOOCA
+        </span>
+      </a>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 data-i18n="about.title">Our Story</h2>
-        <div class="section-divider"></div>
-        <div class="story">
-            <p data-i18n="about.paragraph1">
-                Brazooca Rock Club is a tribute to the golden era of Brazilian rock music from the 1980s and 1990s. 
-                We bring back the nostalgia of unforgettable hits that defined a generation, reimagined with modern energy 
-                and professional musicianship.
-            </p>
-            <p data-i18n="about.paragraph2">
-                With years of experience performing across bars, pubs, and major events, our band has earned a reputation 
-                for delivering authentic, high-energy performances that get crowds moving and singing along to their favorite 
-                classics.
-            </p>
-            <p data-i18n="about.paragraph3">
-                Whether you're looking to fill your venue with enthusiastic guests or create an unforgettable evening at a 
-                private event, Brazooca Rock Club is your perfect choice. We combine technical excellence with genuine passion 
-                for the music that defines our generation.
-            </p>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#hero" class="text-sm font-medium hover:text-neon-pink transition-colors">Home</a>
+        <a href="#members" class="text-sm font-medium hover:text-neon-pink transition-colors">The Band</a>
+        <a href="#media" class="text-sm font-medium hover:text-neon-pink transition-colors">Media</a>
+        <a href="#benefits" class="text-sm font-medium hover:text-neon-pink transition-colors">For Venues</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="hidden md:flex items-center gap-6">
+        <!-- Language Switcher -->
+        <div class="flex items-center gap-2 text-xs text-gray-400">
+          <a href="#" class="hover:text-white transition-colors" title="English UK">EN</a>
+          <span class="text-gray-600">|</span>
+          <a href="#" class="hover:text-white transition-colors" title="Português">PT</a>
+          <span class="text-gray-600">|</span>
+          <a href="#" class="hover:text-white transition-colors" title="Español">ES</a>
         </div>
-    </section>
+        
+        <a href="#contact" class="px-5 py-2 bg-gradient-to-r from-neon-purple to-neon-pink rounded-full font-bold text-sm hover:shadow-[0_0_20px_rgba(255,0,255,0.5)] transition-all transform hover:-translate-y-0.5">
+          Book Now
+        </a>
+      </div>
 
-    <!-- Members Section -->
-    <section id="members">
-        <h2 data-i18n="members.title">Meet The Band</h2>
-        <div class="section-divider"></div>
-        <div class="members-grid">
-            <div class="member-card reveal">
-                <h3>Agnes</h3>
-                <div class="member-role" data-i18n="members.vocals">Vocals</div>
-                <p class="member-bio" data-i18n="members.agnes">
-                    Lead vocalist with an incredible range and stage presence. Agnes brings passion and energy to every performance, 
-                    commanding the stage with authentic Brazilian flair.
-                </p>
-            </div>
-            <div class="member-card reveal">
-                <h3>Marinho</h3>
-                <div class="member-role" data-i18n="members.guitar">Electric Guitar</div>
-                <p class="member-bio" data-i18n="members.marinho">
-                    Master of the electric guitar with signature riffs that define our sound. Marinho's technical prowess and 
-                    dynamic playing style make him the backbone of our performances.
-                </p>
-            </div>
-            <div class="member-card reveal">
-                <h3>Guilherme</h3>
-                <div class="member-role" data-i18n="members.bass">Bass Guitar</div>
-                <p class="member-bio" data-i18n="members.guilherme">
-                    Solid and groovy bass lines that keep the rhythm locked tight. Guilherme's musicality and consistency provide 
-                    the foundation that makes our sound cohesive and powerful.
-                </p>
-            </div>
-            <div class="member-card reveal">
-                <h3>Hezinho</h3>
-                <div class="member-role" data-i18n="members.drums">Drums</div>
-                <p class="member-bio" data-i18n="members.hezinho">
-                    Explosive drumming that drives every track forward. Hezinho's precision and energy create the pulse that gets 
-                    audiences dancing and engaged throughout the set.
-                </p>
-            </div>
-        </div>
-    </section>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white hover:text-neon-pink">
+        <i data-lucide="menu" class="w-8 h-8"></i>
+      </button>
+    </div>
+  </header>
 
-    <!-- Media Section -->
-    <section id="media">
-        <h2 data-i18n="media.title">Listen & Watch</h2>
-        <div class="section-divider"></div>
-        <div class="media-grid">
-            <div class="video-container reveal">
-                <h3 data-i18n="media.videoTitle" style="margin-bottom: 1.5rem;">Latest Performance</h3>
-                <lite-youtube videoid="dQw4w9WgXcQ" style="background-image: url('https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg');"></lite-youtube>
-            </div>
+  <main class="pt-20"><section id="hero" class="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-900">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img data-ai="generate" data-slot="hero-background" data-prompt="High energy rock concert stage with neon lights, 80s synthwave aesthetic, crowd silhouette, vibrant purple and cyan lighting" data-ar="16:9" src="assets/images/hero-background.png" alt="Brazooca Rock Club Stage" class="w-full h-full object-cover opacity-60" loading="eager">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+  </div>
 
-            <div class="playlist reveal">
-                <h3 data-i18n="media.playlistTitle" style="margin-bottom: 1rem;">Our Playlists</h3>
-                <p data-i18n="media.playlistDesc" style="margin-bottom: 2rem;">
-                    Listen to our greatest hits and exclusive covers on your favorite streaming platforms.
-                </p>
-                <div class="playlist-links">
-                    <a href="https://open.spotify.com/playlist/37i9dQZF1DZ52zxXRBJUIe" target="_blank" rel="noopener noreferrer" class="playlist-link">
-                        <h3>Spotify</h3>
-                        <p data-i18n="media.playlistBest">Best Hits Mix</p>
-                    </a>
-                    <a href="https://www.youtube.com/playlist?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf" target="_blank" rel="noopener noreferrer" class="playlist-link">
-                        <h3>YouTube Music</h3>
-                        <p data-i18n="media.classics">Brazilian Classics</p>
-                    </a>
-                    <a href="https://www.youtube.com/c/BrazoocanRock" target="_blank" rel="noopener noreferrer" class="playlist-link">
-                        <h3>YouTube</h3>
-                        <p data-i18n="media.channel">Full Channel</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
-        <h2 data-i18n="booking.title">Book Us For Your Event</h2>
-        <p data-i18n="booking.subtitle">
-            Available for bars, pubs, private events, and festivals. Get in touch now to check availability and pricing.
+  <!-- Content -->
+  <div class="relative z-10 container mx-auto px-4 text-center">
+    <span class="inline-block py-1 px-3 rounded-full bg-fuchsia-600/30 border border-fuchsia-500 text-fuchsia-300 text-sm font-bold tracking-wider mb-6 uppercase animate-fade-in-up">
+      The Ultimate 80s &#x26; 90s Experience
+    </span>
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
+      Bring the <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">Brazilian Rock</span> Revolution to Your Stage
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-200 mb-10 max-w-3xl mx-auto font-light">
+      Brazooca Rock Club delivers the nostalgic hits that defined a generation. High-energy performances perfect for pubs, bars, and corporate events.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(192,38,211,0.5)]">
+        Book Us Now
+      </a>
+      <a href="#intro" class="px-8 py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 font-bold rounded-full transition-all">
+        Watch Promo
+      </a>
+    </div>
+  </div>
+</section><section id="intro" class="py-20 bg-slate-900 text-white overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <!-- Text Content -->
+      <div class="w-full lg:w-1/2 space-y-6">
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          Reliving the <span class="text-yellow-400">Golden Era</span> of Music
+        </h2>
+        <p class="text-lg text-slate-300 leading-relaxed">
+          The 80s and 90s were a magical time for Brazilian music. It was raw, poetic, and electrifying. At <strong>Brazooca Rock Club</strong>, we don't just play covers; we reignite the flame of that era.
         </p>
-        <div class="contact-methods">
-            <div class="contact-method">
-                <a href="https://wa.me/5511987654321?text=Hi%20Brazooca%20Rock%20Club%2C%20I%27d%20like%20to%20book%20your%20band%20for%20an%20event" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    <span data-i18n="booking.whatsapp">📱 WhatsApp</span>
-                </a>
-            </div>
-            <div class="contact-method">
-                <a href="mailto:booking@brazooca.com?subject=Booking%20Inquiry%20-%20Brazooca%20Rock%20Club" class="btn btn-secondary">
-                    <span data-i18n="booking.email">✉️ Email</span>
-                </a>
-            </div>
+        <p class="text-lg text-slate-300 leading-relaxed">
+          From the rebellious anthems of the capital to the poetic rock of the south, our setlist is a curated journey through time designed to get crowds singing along. Whether it's a packed pub or an exclusive event, we bring the professional sound and stage presence that turns a night out into a memory.
+        </p>
+        <ul class="space-y-3 mt-4">
+          <li class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-slate-200">Authentic 80s/90s Repertoire</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-slate-200">High-Fidelity Sound &#x26; Performance</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-slate-200">Engaging Stage Presence</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Image Content -->
+      <div class="w-full lg:w-1/2 relative">
+        <div class="absolute -inset-4 bg-gradient-to-r from-fuchsia-600 to-cyan-500 rounded-2xl blur-lg opacity-30"></div>
+        <img data-ai="generate" data-slot="intro-image" data-prompt="Retro style rock band performing on stage, vintage microphone, electric guitar close up, moody lighting with smoke, 80s rock aesthetic" data-ar="4:3" src="assets/images/intro-image.png" alt="Brazooca Rock Club Live Performance" class="relative w-full rounded-2xl shadow-2xl border border-slate-700" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section><section id="members" class="py-24 bg-slate-950">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Meet the <span class="text-fuchsia-500">Band</span></h2>
+      <p class="text-slate-400 max-w-2xl mx-auto">Four passionate musicians united by the rhythm of Brazilian rock history.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Agnes -->
+      <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-fuchsia-500 transition-colors duration-300">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img data-ai="generate" data-slot="member-agnes" data-prompt="Portrait of a female rock singer, holding a vintage microphone, charismatic expression, stage lighting, 80s rock fashion style" data-ar="3:4" src="assets/images/member-agnes.png" alt="Agnes - Singer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p data-i18n="footer.copyright">&copy; 2026 Brazooca Rock Club. All rights reserved.</p>
-        <p data-i18n="footer.location">Based in Brazil • Bringing 80s Rock to the World</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/brazooca" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
-            <a href="https://www.facebook.com/brazooca" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
-            <a href="https://www.youtube.com/c/BrazoocanRock" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-white mb-1">Agnes</h3>
+          <p class="text-fuchsia-400 font-medium uppercase tracking-wider text-sm">Lead Vocals</p>
         </div>
-    </footer>
+      </div>
 
-    <!-- Lite YouTube Embed -->
-    <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.0/src/lite-yt-embed.js"></script>
+      <!-- Marinho -->
+      <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500 transition-colors duration-300">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img data-ai="generate" data-slot="member-marinho" data-prompt="Portrait of a male electric guitarist, playing a classic guitar, cool attitude, leather jacket, neon background accents" data-ar="3:4" src="assets/images/member-marinho.png" alt="Marinho - Electric Guitar" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-white mb-1">Marinho</h3>
+          <p class="text-cyan-400 font-medium uppercase tracking-wider text-sm">Electric Guitar</p>
+        </div>
+      </div>
 
-    <!-- GSAP for Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+      <!-- Guilherme -->
+      <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-yellow-500 transition-colors duration-300">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img data-ai="generate" data-slot="member-guilherme" data-prompt="Portrait of a male bass player, focused expression, holding a bass guitar, dark moody rock atmosphere" data-ar="3:4" src="assets/images/member-guilherme.png" alt="Guilherme - Bass" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-white mb-1">Guilherme</h3>
+          <p class="text-yellow-400 font-medium uppercase tracking-wider text-sm">Bass</p>
+        </div>
+      </div>
 
-    <!-- Main Application Script -->
-    <script>
-        // Register ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger);
+      <!-- Hezinho -->
+      <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-purple-500 transition-colors duration-300">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img data-ai="generate" data-slot="member-hezinho" data-prompt="Portrait of a male drummer, sitting behind a drum kit, energetic pose, holding drumsticks, dynamic lighting" data-ar="3:4" src="assets/images/member-hezinho.png" alt="Hezinho - Drums" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-white mb-1">Hezinho</h3>
+          <p class="text-purple-400 font-medium uppercase tracking-wider text-sm">Drums</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="media" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-fuchsia-900 via-slate-900 to-black"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">
+        Experience the Energy
+      </h2>
+      <p class="text-lg text-slate-300">
+        Watch Brazooca Rock Club ignite the stage with the greatest Brazilian hits of the 80s and 90s. 
+        From Legião Urbana to Paralamas, we bring the nostalgia back to life.
+      </p>
+    </div>
 
-        // Translations Object
-        const translations = {
-            'en-GB': {
-                'nav.about': 'About',
-                'nav.members': 'Members',
-                'nav.media': 'Media',
-                'nav.booking': 'Booking',
-                'hero.title': 'Brazooca Rock Club',
-                'hero.subtitle': 'Bringing 80s & 90s Brazilian Rock Back to Life',
-                'hero.bookNow': 'Book Now',
-                'hero.discover': 'Discover Our Sound',
-                'about.title': 'Our Story',
-                'about.paragraph1': 'Brazooca Rock Club is a tribute to the golden era of Brazilian rock music from the 1980s and 1990s. We bring back the nostalgia of unforgettable hits that defined a generation, reimagined with modern energy and professional musicianship.',
-                'about.paragraph2': 'With years of experience performing across bars, pubs, and major events, our band has earned a reputation for delivering authentic, high-energy performances that get crowds moving and singing along to their favorite classics.',
-                'about.paragraph3': 'Whether you\'re looking to fill your venue with enthusiastic guests or create an unforgettable evening at a private event, Brazooca Rock Club is your perfect choice. We combine technical excellence with genuine passion for the music that defines our generation.',
-                'members.title': 'Meet The Band',
-                'members.vocals': 'Vocals',
-                'members.guitar': 'Electric Guitar',
-                'members.bass': 'Bass Guitar',
-                'members.drums': 'Drums',
-                'members.agnes': 'Lead vocalist with an incredible range and stage presence. Agnes brings passion and energy to every performance, commanding the stage with authentic Brazilian flair.',
-                'members.marinho': 'Master of the electric guitar with signature riffs that define our sound. Marinho\'s technical prowess and dynamic playing style make him the backbone of our performances.',
-                'members.guilherme': 'Solid and groovy bass lines that keep the rhythm locked tight. Guilherme\'s musicality and consistency provide the foundation that makes our sound cohesive and powerful.',
-                'members.hezinho': 'Explosive drumming that drives every track forward. Hezinho\'s precision and energy create the pulse that gets audiences dancing and engaged throughout the set.',
-                'media.title': 'Listen & Watch',
-                'media.videoTitle': 'Latest Performance',
-                'media.playlistTitle': 'Our Playlists',
-                'media.playlistDesc': 'Listen to our greatest hits and exclusive covers on your favorite streaming platforms.',
-                'media.playlistBest': 'Best Hits Mix',
-                'media.classics': 'Brazilian Classics',
-                'media.channel': 'Full Channel',
-                'booking.title': 'Book Us For Your Event',
-                'booking.subtitle': 'Available for bars, pubs, private events, and festivals. Get in touch now to check availability and pricing.',
-                'booking.whatsapp': '📱 WhatsApp Us',
-                'booking.email': '✉️ Email Us',
-                'footer.copyright': '© 2026 Brazooca Rock Club. All rights reserved.',
-                'footer.location': 'Based in Brazil • Bringing 80s Rock to the World'
-            },
-            'pt-PT': {
-                'nav.about': 'Sobre',
-                'nav.members': 'Membros',
-                'nav.media': 'Mídia',
-                'nav.booking': 'Reserva',
-                'hero.title': 'Brazooca Rock Club',
-                'hero.subtitle': 'Trazendo o Rock Brasileiro dos Anos 80 e 90 de Volta',
-                'hero.bookNow': 'Reserve Agora',
-                'hero.discover': 'Descubra Nosso Som',
-                'about.title': 'Nossa História',
-                'about.paragraph1': 'Brazooca Rock Club é uma homenagem à era de ouro da música rock brasileira dos anos 1980 e 1990. Trazemos de volta a nostalgia dos sucessos inesquecíveis que definiram uma geração, reimaginados com energia moderna e profissionalismo musical.',
-                'about.paragraph2': 'Com anos de experiência em apresentações em bares, pubs e grandes eventos, nossa banda conquistou reputação por entregar performances autênticas e energéticas que fazem o público se mexer e cantar junto aos clássicos favoritos.',
-                'about.paragraph3': 'Seja você procurando preencher seu estabelecimento com convidados entusiasmados ou criar uma noite inesquecível em um evento privado, Brazooca Rock Club é sua escolha perfeita. Combinamos excelência técnica com paixão genuína pela música que define nossa geração.',
-                'members.title': 'Conheça a Banda',
-                'members.vocals': 'Voz',
-                'members.guitar': 'Guitarra Elétrica',
-                'members.bass': 'Baixo',
-                'members.drums': 'Bateria',
-                'members.agnes': 'Vocalista líder com alcance vocal incrível e presença de palco. Agnes traz paixão e energia para cada apresentação, dominando o palco com autenticidade brasileira.',
-                'members.marinho': 'Mestre da guitarra elétrica com riffs assinados que definem nosso som. A proficiência técnica de Marinho e estilo dinâmico o tornam a espinha dorsal de nossas performances.',
-                'members.guilherme': 'Linhas de baixo sólidas e groovy que mantêm o ritmo firme. A musicalidade e consistência de Guilherme fornecem a base que torna nosso som coeso e poderoso.',
-                'members.hezinho': 'Bateria explosiva que impulsiona cada faixa para frente. A precisão e energia de Hezinho criam o pulso que faz o público dançar e se envolver ao longo de todo o show.',
-                'media.title': 'Ouça e Assista',
-                'media.videoTitle': 'Apresentação Recente',
-                'media.playlistTitle': 'Nossas Playlists',
-                'media.playlistDesc': 'Ouça nossos maiores sucessos e covers exclusivos em suas plataformas de streaming favoritas.',
-                'media.playlistBest': 'Mix dos Melhores',
-                'media.classics': 'Clássicos Brasileiros',
-                'media.channel': 'Canal Completo',
-                'booking.title': 'Reserve-nos Para Seu Evento',
-                'booking.subtitle': 'Disponíveis para bares, pubs, eventos privados e festivais. Entre em contato agora para verificar disponibilidade e preços.',
-                'booking.whatsapp': '📱 WhatsApp',
-                'booking.email': '✉️ Email',
-                'footer.copyright': '© 2026 Brazooca Rock Club. Todos os direitos reservados.',
-                'footer.location': 'Baseado no Brasil • Trazendo Rock dos Anos 80 para o Mundo'
-            },
-            'es': {
-                'nav.about': 'Acerca de',
-                'nav.members': 'Miembros',
-                'nav.media': 'Medios',
-                'nav.booking': 'Reserva',
-                'hero.title': 'Brazooca Rock Club',
-                'hero.subtitle': 'Trayendo el Rock Brasileño de los Años 80 y 90 de Vuelta',
-                'hero.bookNow': 'Reservar Ahora',
-                'hero.discover': 'Descubre Nuestro Sonido',
-                'about.title': 'Nuestra Historia',
-                'about.paragraph1': 'Brazooca Rock Club es un tributo a la era dorada de la música rock brasileña de los años 80 y 90. Traemos de vuelta la nostalgia de éxitos inolvidables que definieron una generación, reimaginados con energía moderna y profesionalismo musical.',
-                'about.paragraph2': 'Con años de experiencia realizando en bares, pubs y eventos importantes, nuestra banda ha ganado reputación por entregar presentaciones auténticas y de alta energía que hacen que el público se mueva y cante junto a sus clásicos favoritos.',
-                'about.paragraph3': 'Ya sea que busque llenar su lugar con clientes entusiastas o crear una noche memorable en un evento privado, Brazooca Rock Club es su opción perfecta. Combinamos excelencia técnica con pasión genuina por la música que define nuestra generación.',
-                'members.title': 'Conoce la Banda',
-                'members.vocals': 'Voz',
-                'members.guitar': 'Guitarra Eléctrica',
-                'members.bass': 'Bajo',
-                'members.drums': 'Batería',
-                'members.agnes': 'Vocalista principal con un rango increíble y presencia en el escenario. Agnes aporta pasión y energía a cada actuación, dominando el escenario con auténtico estilo brasileño.',
-                'members.marinho': 'Maestro de la guitarra eléctrica con riffs característicos que definen nuestro sonido. La destreza técnica de Marinho y su estilo dinámico lo convierten en la columna vertebral de nuestras actuaciones.',
-                'members.guilherme': 'Líneas de bajo sólidas y groovy que mantienen el ritmo firme. La musicalidad y consistencia de Guilherme proporcionan la base que hace que nuestro sonido sea coherente y poderoso.',
-                'members.hezinho': 'Batería explosiva que impulsa cada pista adelante. La precisión y energía de Hezinho crean el pulso que hace que el público baile y se involucre durante todo el show.',
-                'media.title': 'Escucha y Ve',
-                'media.videoTitle': 'Actuación Reciente',
-                'media.playlistTitle': 'Nuestras Listas de Reproducción',
-                'media.playlistDesc': 'Escucha nuestros mayores éxitos y covers exclusivos en tus plataformas de transmisión favoritas.',
-                'media.playlistBest': 'Mix de Lo Mejor',
-                'media.classics': 'Clásicos Brasileños',
-                'media.channel': 'Canal Completo',
-                'booking.title': 'Resérvanos Para Tu Evento',
-                'booking.subtitle': 'Disponibles para bares, pubs, eventos privados y festivales. Ponte en contacto ahora para verificar disponibilidad y precios.',
-                'booking.whatsapp': '📱 WhatsApp',
-                'booking.email': '✉️ Email',
-                'footer.copyright': '© 2026 Brazooca Rock Club. Todos los derechos reservados.',
-                'footer.location': 'Con base en Brasil • Trayendo el Rock de los Años 80 al Mundo'
-            }
-        };
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Video Column -->
+      <div class="bg-slate-800 p-2 rounded-2xl shadow-2xl shadow-cyan-500/20 border border-slate-700">
+        <div class="aspect-video w-full rounded-xl overflow-hidden bg-black relative group">
+          <!-- YouTube Placeholder / Embed -->
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder" title="Brazooca Rock Club Live Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-white mb-1">Live at The Downtown Pub</h3>
+          <p class="text-sm text-slate-400">Full band performance featuring Agnes, Marinho, Guilherme, and Hezinho.</p>
+        </div>
+      </div>
 
-        // Initialize translations
-        let currentLanguage = localStorage.getItem('language') || 'en-GB';
+      <!-- Playlist Column -->
+      <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 p-6">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-fuchsia-500"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            Setlist Highlights
+          </h3>
+          <span class="text-xs font-bold px-2 py-1 rounded bg-cyan-500/20 text-cyan-400 uppercase tracking-wider">80s &#x26; 90s Classics</span>
+        </div>
+        
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-700/50 transition-colors group cursor-pointer">
+            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-cyan-400 font-bold group-hover:bg-cyan-500 group-hover:text-white transition-colors">1</div>
+            <div class="flex-1">
+              <h4 class="font-medium text-white">Tempo Perdido</h4>
+              <p class="text-xs text-slate-400">Legião Urbana Cover</p>
+            </div>
+            <div class="text-slate-500 text-sm">05:02</div>
+          </li>
+          <li class="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-700/50 transition-colors group cursor-pointer">
+            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-cyan-400 font-bold group-hover:bg-cyan-500 group-hover:text-white transition-colors">2</div>
+            <div class="flex-1">
+              <h4 class="font-medium text-white">Meu Erro</h4>
+              <p class="text-xs text-slate-400">Paralamas do Sucesso Cover</p>
+            </div>
+            <div class="text-slate-500 text-sm">03:28</div>
+          </li>
+          <li class="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-700/50 transition-colors group cursor-pointer">
+            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-cyan-400 font-bold group-hover:bg-cyan-500 group-hover:text-white transition-colors">3</div>
+            <div class="flex-1">
+              <h4 class="font-medium text-white">Pro Dia Nascer Feliz</h4>
+              <p class="text-xs text-slate-400">Barão Vermelho Cover</p>
+            </div>
+            <div class="text-slate-500 text-sm">04:15</div>
+          </li>
+          <li class="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-700/50 transition-colors group cursor-pointer">
+            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-cyan-400 font-bold group-hover:bg-cyan-500 group-hover:text-white transition-colors">4</div>
+            <div class="flex-1">
+              <h4 class="font-medium text-white">Mulher de Fases</h4>
+              <p class="text-xs text-slate-400">Raimundos Cover</p>
+            </div>
+            <div class="text-slate-500 text-sm">03:32</div>
+          </li>
+        </ul>
+        
+        <div class="mt-6 pt-6 border-t border-slate-700 text-center">
+          <a href="#contact" class="inline-flex items-center gap-2 text-fuchsia-400 hover:text-fuchsia-300 font-semibold transition-colors">
+            <span>Listen to full demo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="benefits" class="py-24 bg-black text-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <span class="text-fuchsia-500 font-bold tracking-widest uppercase text-sm mb-2 block">For Venue Owners</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        Why Book <span class="text-cyan-400">Brazooca</span>?
+      </h2>
+      <p class="text-lg text-slate-400">
+        We don't just play music; we create an atmosphere that keeps customers staying longer and ordering more. Professional, reliable, and electric.
+      </p>
+    </div>
 
-        function setLanguage(lang) {
-            currentLanguage = lang;
-            localStorage.setItem('language', lang);
-            
-            // Update HTML lang attribute
-            document.documentElement.lang = lang;
-            
-            // Update all elements with data-i18n attribute
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Benefit 1 -->
+      <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-fuchsia-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(217,70,239,0.2)]">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="benefit-crowd" data-prompt="Energetic crowd at a bar dancing and cheering to a live rock band, neon lights, 80s atmosphere, happy people holding drinks" data-ar="4:3" src="assets/images/benefit-crowd.png" alt="Crowd engagement" width="800" height="600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-8">
+          <h3 class="text-xl font-bold mb-3 text-white group-hover:text-fuchsia-400 transition-colors">Crowd Engagement</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Our setlist is curated to trigger nostalgia and get people singing along. A happy crowd means a busy bar and higher revenue for your night.
+          </p>
+        </div>
+      </div>
 
-            // Update WhatsApp links with localized messages
-            updateWhatsAppLinks(lang);
-            
-            // Update language buttons
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
-                }
-            });
-        }
+      <!-- Benefit 2 -->
+      <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)]">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="benefit-gear" data-prompt="Professional music equipment setup on a stage, electric guitars, bass, drums, amplifiers, high quality sound gear, moody lighting" data-ar="4:3" src="assets/images/benefit-gear.png" alt="Professional gear" width="800" height="600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-8">
+          <h3 class="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">Pro Sound &#x26; Gear</h3>
+          <p class="text-slate-400 leading-relaxed">
+            We bring our own high-end equipment. No technical headaches, just crisp, professional sound that respects your venue's acoustics.
+          </p>
+        </div>
+      </div>
 
-        function updateWhatsAppLinks(lang) {
-            const messages = {
-                'en-GB': 'Hi Brazooca Rock Club, I\'d like to book your band for an event',
-                'pt-PT': 'Olá Brazooca Rock Club, gostaria de contratar sua banda para um evento',
-                'es': 'Hola Brazooca Rock Club, me gustaría contratar a tu banda para un evento'
-            };
-            
-            const whatsappLink = document.querySelector('a[href*="wa.me"]');
-            if (whatsappLink) {
-                const message = encodeURIComponent(messages[lang] || messages['en-GB']);
-                whatsappLink.href = `https://wa.me/5511987654321?text=${message}`;
-            }
-        }
+      <!-- Benefit 3 -->
+      <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-fuchsia-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(217,70,239,0.2)]">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="benefit-marketing" data-prompt="Digital marketing concept for a band, smartphone showing social media event post, neon graphics, promotion strategy" data-ar="4:3" src="assets/images/benefit-marketing.png" alt="Marketing expertise" width="800" height="600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-8">
+          <h3 class="text-xl font-bold mb-3 text-white group-hover:text-fuchsia-400 transition-colors">Marketing Partners</h3>
+          <p class="text-slate-400 leading-relaxed">
+            We don't just show up; we help fill the house. We use our digital marketing expertise to promote your event to our loyal fanbase.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="testimonials" class="py-20 bg-slate-900 border-t border-slate-800">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Trusted by Local Venues</h2>
+      <p class="text-slate-400">See what pub owners and event organizers are saying about Brazooca Rock Club.</p>
+    </div>
 
-        // Language switcher listeners
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const lang = btn.getAttribute('data-lang');
-                setLanguage(lang);
-            });
-        });
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="bg-slate-800 p-8 rounded-xl relative">
+        <svg class="absolute top-6 left-6 w-8 h-8 text-slate-600 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"></path></svg>
+        <p class="text-slate-300 mb-6 relative z-10 pt-6 italic">
+          "The best 80s night we've hosted in years. The band's energy is contagious, and they kept the bar busy until closing time. Highly professional setup."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-purple-600 flex items-center justify-center text-white font-bold">R</div>
+          <div>
+            <h4 class="text-white font-semibold">Ricardo Silva</h4>
+            <p class="text-xs text-cyan-400">Owner, The Retro Pub</p>
+          </div>
+        </div>
+      </div>
 
-        // Scroll Reveal Animation with Intersection Observer
-        function setupScrollReveal() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
+      <!-- Testimonial 2 -->
+      <div class="bg-slate-800 p-8 rounded-xl relative">
+        <svg class="absolute top-6 left-6 w-8 h-8 text-slate-600 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"></path></svg>
+        <p class="text-slate-300 mb-6 relative z-10 pt-6 italic">
+          "Brazooca Rock Club isn't just a band; they are partners. They helped us promote the event on social media and brought a huge crowd. We booked them again immediately."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold">C</div>
+          <div>
+            <h4 class="text-white font-semibold">Carla Mendes</h4>
+            <p class="text-xs text-cyan-400">Event Manager, City Hall Events</p>
+          </div>
+        </div>
+      </div>
 
-            document.querySelectorAll('.reveal').forEach(element => {
-                observer.observe(element);
-            });
-        }
+      <!-- Testimonial 3 -->
+      <div class="bg-slate-800 p-8 rounded-xl relative">
+        <svg class="absolute top-6 left-6 w-8 h-8 text-slate-600 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"></path></svg>
+        <p class="text-slate-300 mb-6 relative z-10 pt-6 italic">
+          "Incredible sound quality. They played all the classics from Legião and Titãs. The audience was singing along the entire time. A true 80s experience."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center text-white font-bold">F</div>
+          <div>
+            <h4 class="text-white font-semibold">Felipe Costa</h4>
+            <p class="text-xs text-cyan-400">Manager, Bar do Rock</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="contact" class="relative py-24 bg-slate-950 text-white overflow-hidden">
+  <!-- Retro Background Elements -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-50"></div>
+  </div>
 
-        // GSAP Smooth Scroll Animations
-        function setupGSAPAnimations() {
-            gsap.utils.toArray('.member-card').forEach((element) => {
-                gsap.to(element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse'
-                    },
-                    duration: 0.6,
-                    opacity: 1,
-                    y: 0
-                });
-            });
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-3xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 mb-6">
+            Book the Nostalgia
+          </h2>
+          <p class="text-lg text-slate-400 leading-relaxed">
+            Ready to transport your audience back to the golden age of Brazilian rock? Whether it's a pub night, a private party, or a large-scale event, Brazooca Rock Club brings the authentic energy of the 80s and 90s.
+          </p>
+        </div>
 
-            gsap.utils.toArray('.playlist-link').forEach((element) => {
-                gsap.to(element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse'
-                    },
-                    duration: 0.6,
-                    opacity: 1,
-                    scale: 1
-                });
-            });
-        }
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Live Performance</h3>
+              <p class="text-slate-400">Full band setup available for 2-3 hour sets.</p>
+            </div>
+          </div>
 
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    if (typeof gsap !== 'undefined' && typeof ScrollToPlugin !== 'undefined') {
-                        gsap.to(window, {
-                            duration: 0.8,
-                            scrollTo: {
-                                y: target,
-                                offsetY: 80
-                            },
-                            ease: 'power2.inOut'
-                        });
-                    } else {
-                        // Fallback: native smooth scroll
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Email Us</h3>
+              <p class="text-slate-400">booking@brazooca.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        // Initialize on page load
-        window.addEventListener('load', () => {
-            setLanguage(currentLanguage);
-            setupScrollReveal();
-            setupGSAPAnimations();
-        });
+      <!-- Booking Form -->
+      <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 shadow-2xl">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="name" class="text-sm font-medium text-slate-300">Name</label>
+              <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none text-white placeholder-slate-600 transition-all">
+            </div>
+            <div class="space-y-2">
+              <label for="email" class="text-sm font-medium text-slate-300">Email</label>
+              <input type="email" id="email" placeholder="john@example.com" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none text-white placeholder-slate-600 transition-all">
+            </div>
+          </div>
 
-        // Re-initialize scroll reveal on page load
-        setupScrollReveal();
-    </script>
-</body>
-</html>
+          <div class="space-y-2">
+            <label for="venue" class="text-sm font-medium text-slate-300">Venue / Event Type</label>
+            <select id="venue" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none text-white transition-all">
+              <option>Bar or Pub</option>
+              <option>Private Party</option>
+              <option>Corporate Event</option>
+              <option>Festival</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="space-y-2">
+            <label for="message" class="text-sm font-medium text-slate-300">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us about your event..." class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none text-white placeholder-slate-600 transition-all resize-none"></textarea>
+          </div>
+
+          <button type="button" class="w-full py-4 px-6 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold rounded-lg shadow-lg shadow-purple-900/20 transform transition hover:-translate-y-1">
+            Send Booking Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section></main>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-800 pt-16 pb-8">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <!-- Brand -->
+        <div class="col-span-1 md:col-span-1">
+          <span class="font-display font-bold text-2xl text-white block mb-4">BRAZOOCA</span>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Bringing the nostalgia of 80s &#x26; 90s Brazilian Rock back to life. The perfect energy for your pub, bar, or private event.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Explore</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#members" class="hover:text-neon-blue transition-colors">The Band</a></li>
+            <li><a href="#media" class="hover:text-neon-blue transition-colors">Videos &#x26; Playlist</a></li>
+            <li><a href="#benefits" class="hover:text-neon-blue transition-colors">Why Hire Us</a></li>
+            <li><a href="#contact" class="hover:text-neon-blue transition-colors">Bookings</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-neon-pink"></i>
+              <span>booking@brazooca.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-neon-pink"></i>
+              <span>+55 11 99999-9999</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-neon-pink"></i>
+              <span>São Paulo, Brazil</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Follow Us</h4>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-neon-pink hover:text-white transition-all">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-neon-blue hover:text-black transition-all">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+              <i data-lucide="youtube" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-gray-500">© 2023 Brazooca Rock Club. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-gray-500">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+    // Initialize AOS Animation Library
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  </script>
+
+</body></html>
