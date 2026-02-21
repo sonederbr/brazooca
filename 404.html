@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Brazooca Rock Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system-font, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a0a2e 50%, #16213e 100%);
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #FF1493, #00FFFF, #9D00FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #FF1493, #FF69B4);
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+        }
+
+        a:hover {
+            box-shadow: 0 0 40px rgba(255, 20, 147, 0.8);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! This page is not in our setlist. Let's get you back to the music!</p>
+        <a href="/">Back to Home</a>
+    </div>
+
+    <script>
+        // Redirect to index.html for single-page navigation
+        if (window.location.pathname !== '/404.html') {
+            sessionStorage.redirect = window.location.pathname;
+            window.location.href = '/?redirect=' + encodeURIComponent(window.location.pathname);
+        }
+    </script>
+</body>
+</html>

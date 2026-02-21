@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brazooca Rock Club - Bringing 80s and 90s Brazilian Rock back to life. Book us for your bar, pub, or event.">
+    <meta name="keywords" content="Brazilian rock band, 80s music, 90s music, live music, bar entertainment, event booking">
+    <meta name="author" content="Brazooca Rock Club">
+    <meta name="theme-color" content="#FF1493">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brazooca Rock Club - 80s & 90s Brazilian Rock">
+    <meta property="og:description" content="Experience the nostalgia of 80s and 90s Brazilian rock music. Book Brazooca Rock Club for your venue.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brazooca.com">
+    <meta property="og:image" content="https://brazooca.com/sampletologo.jpeg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brazooca Rock Club - 80s & 90s Brazilian Rock">
+    <meta name="twitter:description" content="Experience the nostalgia of 80s and 90s Brazilian rock music.">
+    <meta name="twitter:image" content="https://brazooca.com/sampletologo.jpeg">
+    
+    <!-- Canonical and Alternate Links -->
+    <link rel="canonical" href="https://brazooca.com/">
+    <link rel="alternate" hreflang="en-GB" href="https://brazooca.com/">
+    <link rel="alternate" hreflang="pt-PT" href="https://brazooca.com/?lang=pt-PT">
+    <link rel="alternate" hreflang="es" href="https://brazooca.com/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://brazooca.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./sampletologo.jpeg">
+    
+    <!-- Google Fonts - 80s Retro -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Righteous&display=swap" rel="stylesheet">
+    
+    <title>Brazooca Rock Club - 80s & 90s Brazilian Rock | Book Us Now</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system-font, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a0a2e 50%, #16213e 100%);
+            background-attachment: fixed;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Neon 80s Color Palette */
+        :root {
+            --neon-pink: #FF1493;
+            --neon-cyan: #00FFFF;
+            --neon-purple: #9D00FF;
+            --neon-yellow: #FFFF00;
+            --dark-bg: #0a0e27;
+            --accent-bg: #1a0a2e;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            filter: drop-shadow(0 0 10px var(--neon-pink));
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-pink);
+            text-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255, 20, 147, 0.1);
+            border: 1px solid var(--neon-pink);
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .lang-btn.active {
+            background: var(--neon-pink);
+            color: #000;
+            box-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(157, 0, 255, 0.1)),
+                        linear-gradient(to bottom, rgba(0, 255, 255, 0.05), transparent);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 20, 147, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(157, 0, 255, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 25s infinite ease-in-out reverse;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-logo {
+            height: 200px;
+            width: auto;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 0 30px var(--neon-pink));
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-family: 'Audiowide', sans-serif;
+            margin-bottom: 2rem;
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s backwards;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--neon-pink), #FF69B4);
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 40px var(--neon-pink), 0 0 20px rgba(255, 20, 147, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--neon-cyan);
+            border: 2px solid var(--neon-cyan);
+            box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: var(--neon-cyan);
+            color: #000;
+            box-shadow: 0 0 30px var(--neon-cyan);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(30px, -30px) rotate(90deg); }
+            50% { transform: translate(0, -60px) rotate(180deg); }
+            75% { transform: translate(-30px, -30px) rotate(270deg); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px currentColor; }
+            50% { text-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-cyan), transparent);
+            margin: 2rem 0;
+        }
+
+        /* Story Section */
+        .story {
+            background: rgba(26, 10, 46, 0.5);
+            border-radius: 10px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 20, 147, 0.3);
+        }
+
+        .story p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Members Section */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .member-card {
+            background: rgba(26, 10, 46, 0.6);
+            border: 1px solid rgba(157, 0, 255, 0.3);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .member-card:hover::before {
+            animation: shine 0.6s;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .member-card:hover {
+            border-color: var(--neon-pink);
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+            transform: translateY(-10px);
+        }
+
+        .member-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--neon-pink);
+        }
+
+        .member-role {
+            color: var(--neon-cyan);
+            font-family: 'Audiowide', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Media Section */
+        .media-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .video-container {
+            background: rgba(26, 10, 46, 0.6);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        lite-youtube {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Playlist Section */
+        .playlist {
+            background: rgba(26, 10, 46, 0.6);
+            border: 1px solid rgba(157, 0, 255, 0.3);
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .playlist-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .playlist-link {
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.2), rgba(157, 0, 255, 0.2));
+            border: 1px solid var(--neon-pink);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .playlist-link:hover {
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.4), rgba(157, 0, 255, 0.4));
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+            transform: scale(1.05);
+        }
+
+        .playlist-link h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--neon-cyan);
+        }
+
+        /* Booking Section */
+        .booking {
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.15), rgba(0, 255, 255, 0.1));
+            border: 2px solid var(--neon-pink);
+            border-radius: 10px;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .booking h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .booking p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(10, 14, 39, 0.95);
+            border-top: 2px solid var(--neon-cyan);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            color: var(--neon-pink);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+                background: rgba(10, 14, 39, 0.95);
+                border-radius: 8px;
+                padding: 1rem 0;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 1001;
+            }
+
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+
+            .lang-switcher {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="./sampletologo.jpeg" alt="Brazooca Logo" class="logo" loading="lazy">
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#members" data-i18n="nav.members">Members</a></li>
+                    <li><a href="#media" data-i18n="nav.media">Media</a></li>
+                    <li><a href="#booking" data-i18n="nav.booking">Booking</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en-GB">EN</button>
+                    <button class="lang-btn" data-lang="pt-PT">PT</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./sampletologo.jpeg" alt="Brazooca Rock Club" class="hero-logo" loading="lazy">
+            <h1 data-i18n="hero.title">Brazooca Rock Club</h1>
+            <p data-i18n="hero.subtitle">Bringing 80s & 90s Brazilian Rock Back to Life</p>
+            <div class="cta-buttons">
+                <a href="#booking" class="btn btn-primary" data-i18n="hero.bookNow">Book Now</a>
+                <a href="#media" class="btn btn-secondary" data-i18n="hero.discover">Discover Our Sound</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 data-i18n="about.title">Our Story</h2>
+        <div class="section-divider"></div>
+        <div class="story">
+            <p data-i18n="about.paragraph1">
+                Brazooca Rock Club is a tribute to the golden era of Brazilian rock music from the 1980s and 1990s. 
+                We bring back the nostalgia of unforgettable hits that defined a generation, reimagined with modern energy 
+                and professional musicianship.
+            </p>
+            <p data-i18n="about.paragraph2">
+                With years of experience performing across bars, pubs, and major events, our band has earned a reputation 
+                for delivering authentic, high-energy performances that get crowds moving and singing along to their favorite 
+                classics.
+            </p>
+            <p data-i18n="about.paragraph3">
+                Whether you're looking to fill your venue with enthusiastic guests or create an unforgettable evening at a 
+                private event, Brazooca Rock Club is your perfect choice. We combine technical excellence with genuine passion 
+                for the music that defines our generation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members">
+        <h2 data-i18n="members.title">Meet The Band</h2>
+        <div class="section-divider"></div>
+        <div class="members-grid">
+            <div class="member-card reveal">
+                <h3>Agnes</h3>
+                <div class="member-role" data-i18n="members.vocals">Vocals</div>
+                <p class="member-bio" data-i18n="members.agnes">
+                    Lead vocalist with an incredible range and stage presence. Agnes brings passion and energy to every performance, 
+                    commanding the stage with authentic Brazilian flair.
+                </p>
+            </div>
+            <div class="member-card reveal">
+                <h3>Marinho</h3>
+                <div class="member-role" data-i18n="members.guitar">Electric Guitar</div>
+                <p class="member-bio" data-i18n="members.marinho">
+                    Master of the electric guitar with signature riffs that define our sound. Marinho's technical prowess and 
+                    dynamic playing style make him the backbone of our performances.
+                </p>
+            </div>
+            <div class="member-card reveal">
+                <h3>Guilherme</h3>
+                <div class="member-role" data-i18n="members.bass">Bass Guitar</div>
+                <p class="member-bio" data-i18n="members.guilherme">
+                    Solid and groovy bass lines that keep the rhythm locked tight. Guilherme's musicality and consistency provide 
+                    the foundation that makes our sound cohesive and powerful.
+                </p>
+            </div>
+            <div class="member-card reveal">
+                <h3>Hezinho</h3>
+                <div class="member-role" data-i18n="members.drums">Drums</div>
+                <p class="member-bio" data-i18n="members.hezinho">
+                    Explosive drumming that drives every track forward. Hezinho's precision and energy create the pulse that gets 
+                    audiences dancing and engaged throughout the set.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2 data-i18n="media.title">Listen & Watch</h2>
+        <div class="section-divider"></div>
+        <div class="media-grid">
+            <div class="video-container reveal">
+                <h3 data-i18n="media.videoTitle" style="margin-bottom: 1.5rem;">Latest Performance</h3>
+                <lite-youtube videoid="dQw4w9WgXcQ" style="background-image: url('https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg');"></lite-youtube>
+            </div>
+
+            <div class="playlist reveal">
+                <h3 data-i18n="media.playlistTitle" style="margin-bottom: 1rem;">Our Playlists</h3>
+                <p data-i18n="media.playlistDesc" style="margin-bottom: 2rem;">
+                    Listen to our greatest hits and exclusive covers on your favorite streaming platforms.
+                </p>
+                <div class="playlist-links">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DZ52zxXRBJUIe" target="_blank" rel="noopener noreferrer" class="playlist-link">
+                        <h3>Spotify</h3>
+                        <p data-i18n="media.playlistBest">Best Hits Mix</p>
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf" target="_blank" rel="noopener noreferrer" class="playlist-link">
+                        <h3>YouTube Music</h3>
+                        <p data-i18n="media.classics">Brazilian Classics</p>
+                    </a>
+                    <a href="https://www.youtube.com/c/BrazoocanRock" target="_blank" rel="noopener noreferrer" class="playlist-link">
+                        <h3>YouTube</h3>
+                        <p data-i18n="media.channel">Full Channel</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2 data-i18n="booking.title">Book Us For Your Event</h2>
+        <p data-i18n="booking.subtitle">
+            Available for bars, pubs, private events, and festivals. Get in touch now to check availability and pricing.
+        </p>
+        <div class="contact-methods">
+            <div class="contact-method">
+                <a href="https://wa.me/5511987654321?text=Hi%20Brazooca%20Rock%20Club%2C%20I%27d%20like%20to%20book%20your%20band%20for%20an%20event" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <span data-i18n="booking.whatsapp">📱 WhatsApp</span>
+                </a>
+            </div>
+            <div class="contact-method">
+                <a href="mailto:booking@brazooca.com?subject=Booking%20Inquiry%20-%20Brazooca%20Rock%20Club" class="btn btn-secondary">
+                    <span data-i18n="booking.email">✉️ Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.copyright">&copy; 2026 Brazooca Rock Club. All rights reserved.</p>
+        <p data-i18n="footer.location">Based in Brazil • Bringing 80s Rock to the World</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/brazooca" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+            <a href="https://www.facebook.com/brazooca" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+            <a href="https://www.youtube.com/c/BrazoocanRock" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+        </div>
+    </footer>
+
+    <!-- Lite YouTube Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.0/src/lite-yt-embed.js"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- Main Application Script -->
+    <script>
+        // Register ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Translations Object
+        const translations = {
+            'en-GB': {
+                'nav.about': 'About',
+                'nav.members': 'Members',
+                'nav.media': 'Media',
+                'nav.booking': 'Booking',
+                'hero.title': 'Brazooca Rock Club',
+                'hero.subtitle': 'Bringing 80s & 90s Brazilian Rock Back to Life',
+                'hero.bookNow': 'Book Now',
+                'hero.discover': 'Discover Our Sound',
+                'about.title': 'Our Story',
+                'about.paragraph1': 'Brazooca Rock Club is a tribute to the golden era of Brazilian rock music from the 1980s and 1990s. We bring back the nostalgia of unforgettable hits that defined a generation, reimagined with modern energy and professional musicianship.',
+                'about.paragraph2': 'With years of experience performing across bars, pubs, and major events, our band has earned a reputation for delivering authentic, high-energy performances that get crowds moving and singing along to their favorite classics.',
+                'about.paragraph3': 'Whether you\'re looking to fill your venue with enthusiastic guests or create an unforgettable evening at a private event, Brazooca Rock Club is your perfect choice. We combine technical excellence with genuine passion for the music that defines our generation.',
+                'members.title': 'Meet The Band',
+                'members.vocals': 'Vocals',
+                'members.guitar': 'Electric Guitar',
+                'members.bass': 'Bass Guitar',
+                'members.drums': 'Drums',
+                'members.agnes': 'Lead vocalist with an incredible range and stage presence. Agnes brings passion and energy to every performance, commanding the stage with authentic Brazilian flair.',
+                'members.marinho': 'Master of the electric guitar with signature riffs that define our sound. Marinho\'s technical prowess and dynamic playing style make him the backbone of our performances.',
+                'members.guilherme': 'Solid and groovy bass lines that keep the rhythm locked tight. Guilherme\'s musicality and consistency provide the foundation that makes our sound cohesive and powerful.',
+                'members.hezinho': 'Explosive drumming that drives every track forward. Hezinho\'s precision and energy create the pulse that gets audiences dancing and engaged throughout the set.',
+                'media.title': 'Listen & Watch',
+                'media.videoTitle': 'Latest Performance',
+                'media.playlistTitle': 'Our Playlists',
+                'media.playlistDesc': 'Listen to our greatest hits and exclusive covers on your favorite streaming platforms.',
+                'media.playlistBest': 'Best Hits Mix',
+                'media.classics': 'Brazilian Classics',
+                'media.channel': 'Full Channel',
+                'booking.title': 'Book Us For Your Event',
+                'booking.subtitle': 'Available for bars, pubs, private events, and festivals. Get in touch now to check availability and pricing.',
+                'booking.whatsapp': '📱 WhatsApp Us',
+                'booking.email': '✉️ Email Us',
+                'footer.copyright': '© 2026 Brazooca Rock Club. All rights reserved.',
+                'footer.location': 'Based in Brazil • Bringing 80s Rock to the World'
+            },
+            'pt-PT': {
+                'nav.about': 'Sobre',
+                'nav.members': 'Membros',
+                'nav.media': 'Mídia',
+                'nav.booking': 'Reserva',
+                'hero.title': 'Brazooca Rock Club',
+                'hero.subtitle': 'Trazendo o Rock Brasileiro dos Anos 80 e 90 de Volta',
+                'hero.bookNow': 'Reserve Agora',
+                'hero.discover': 'Descubra Nosso Som',
+                'about.title': 'Nossa História',
+                'about.paragraph1': 'Brazooca Rock Club é uma homenagem à era de ouro da música rock brasileira dos anos 1980 e 1990. Trazemos de volta a nostalgia dos sucessos inesquecíveis que definiram uma geração, reimaginados com energia moderna e profissionalismo musical.',
+                'about.paragraph2': 'Com anos de experiência em apresentações em bares, pubs e grandes eventos, nossa banda conquistou reputação por entregar performances autênticas e energéticas que fazem o público se mexer e cantar junto aos clássicos favoritos.',
+                'about.paragraph3': 'Seja você procurando preencher seu estabelecimento com convidados entusiasmados ou criar uma noite inesquecível em um evento privado, Brazooca Rock Club é sua escolha perfeita. Combinamos excelência técnica com paixão genuína pela música que define nossa geração.',
+                'members.title': 'Conheça a Banda',
+                'members.vocals': 'Voz',
+                'members.guitar': 'Guitarra Elétrica',
+                'members.bass': 'Baixo',
+                'members.drums': 'Bateria',
+                'members.agnes': 'Vocalista líder com alcance vocal incrível e presença de palco. Agnes traz paixão e energia para cada apresentação, dominando o palco com autenticidade brasileira.',
+                'members.marinho': 'Mestre da guitarra elétrica com riffs assinados que definem nosso som. A proficiência técnica de Marinho e estilo dinâmico o tornam a espinha dorsal de nossas performances.',
+                'members.guilherme': 'Linhas de baixo sólidas e groovy que mantêm o ritmo firme. A musicalidade e consistência de Guilherme fornecem a base que torna nosso som coeso e poderoso.',
+                'members.hezinho': 'Bateria explosiva que impulsiona cada faixa para frente. A precisão e energia de Hezinho criam o pulso que faz o público dançar e se envolver ao longo de todo o show.',
+                'media.title': 'Ouça e Assista',
+                'media.videoTitle': 'Apresentação Recente',
+                'media.playlistTitle': 'Nossas Playlists',
+                'media.playlistDesc': 'Ouça nossos maiores sucessos e covers exclusivos em suas plataformas de streaming favoritas.',
+                'media.playlistBest': 'Mix dos Melhores',
+                'media.classics': 'Clássicos Brasileiros',
+                'media.channel': 'Canal Completo',
+                'booking.title': 'Reserve-nos Para Seu Evento',
+                'booking.subtitle': 'Disponíveis para bares, pubs, eventos privados e festivais. Entre em contato agora para verificar disponibilidade e preços.',
+                'booking.whatsapp': '📱 WhatsApp',
+                'booking.email': '✉️ Email',
+                'footer.copyright': '© 2026 Brazooca Rock Club. Todos os direitos reservados.',
+                'footer.location': 'Baseado no Brasil • Trazendo Rock dos Anos 80 para o Mundo'
+            },
+            'es': {
+                'nav.about': 'Acerca de',
+                'nav.members': 'Miembros',
+                'nav.media': 'Medios',
+                'nav.booking': 'Reserva',
+                'hero.title': 'Brazooca Rock Club',
+                'hero.subtitle': 'Trayendo el Rock Brasileño de los Años 80 y 90 de Vuelta',
+                'hero.bookNow': 'Reservar Ahora',
+                'hero.discover': 'Descubre Nuestro Sonido',
+                'about.title': 'Nuestra Historia',
+                'about.paragraph1': 'Brazooca Rock Club es un tributo a la era dorada de la música rock brasileña de los años 80 y 90. Traemos de vuelta la nostalgia de éxitos inolvidables que definieron una generación, reimaginados con energía moderna y profesionalismo musical.',
+                'about.paragraph2': 'Con años de experiencia realizando en bares, pubs y eventos importantes, nuestra banda ha ganado reputación por entregar presentaciones auténticas y de alta energía que hacen que el público se mueva y cante junto a sus clásicos favoritos.',
+                'about.paragraph3': 'Ya sea que busque llenar su lugar con clientes entusiastas o crear una noche memorable en un evento privado, Brazooca Rock Club es su opción perfecta. Combinamos excelencia técnica con pasión genuina por la música que define nuestra generación.',
+                'members.title': 'Conoce la Banda',
+                'members.vocals': 'Voz',
+                'members.guitar': 'Guitarra Eléctrica',
+                'members.bass': 'Bajo',
+                'members.drums': 'Batería',
+                'members.agnes': 'Vocalista principal con un rango increíble y presencia en el escenario. Agnes aporta pasión y energía a cada actuación, dominando el escenario con auténtico estilo brasileño.',
+                'members.marinho': 'Maestro de la guitarra eléctrica con riffs característicos que definen nuestro sonido. La destreza técnica de Marinho y su estilo dinámico lo convierten en la columna vertebral de nuestras actuaciones.',
+                'members.guilherme': 'Líneas de bajo sólidas y groovy que mantienen el ritmo firme. La musicalidad y consistencia de Guilherme proporcionan la base que hace que nuestro sonido sea coherente y poderoso.',
+                'members.hezinho': 'Batería explosiva que impulsa cada pista adelante. La precisión y energía de Hezinho crean el pulso que hace que el público baile y se involucre durante todo el show.',
+                'media.title': 'Escucha y Ve',
+                'media.videoTitle': 'Actuación Reciente',
+                'media.playlistTitle': 'Nuestras Listas de Reproducción',
+                'media.playlistDesc': 'Escucha nuestros mayores éxitos y covers exclusivos en tus plataformas de transmisión favoritas.',
+                'media.playlistBest': 'Mix de Lo Mejor',
+                'media.classics': 'Clásicos Brasileños',
+                'media.channel': 'Canal Completo',
+                'booking.title': 'Resérvanos Para Tu Evento',
+                'booking.subtitle': 'Disponibles para bares, pubs, eventos privados y festivales. Ponte en contacto ahora para verificar disponibilidad y precios.',
+                'booking.whatsapp': '📱 WhatsApp',
+                'booking.email': '✉️ Email',
+                'footer.copyright': '© 2026 Brazooca Rock Club. Todos los derechos reservados.',
+                'footer.location': 'Con base en Brasil • Trayendo el Rock de los Años 80 al Mundo'
+            }
+        };
+
+        // Initialize translations
+        let currentLanguage = localStorage.getItem('language') || 'en-GB';
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update WhatsApp links with localized messages
+            updateWhatsAppLinks(lang);
+            
+            // Update language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        function updateWhatsAppLinks(lang) {
+            const messages = {
+                'en-GB': 'Hi Brazooca Rock Club, I\'d like to book your band for an event',
+                'pt-PT': 'Olá Brazooca Rock Club, gostaria de contratar sua banda para um evento',
+                'es': 'Hola Brazooca Rock Club, me gustaría contratar a tu banda para un evento'
+            };
+            
+            const whatsappLink = document.querySelector('a[href*="wa.me"]');
+            if (whatsappLink) {
+                const message = encodeURIComponent(messages[lang] || messages['en-GB']);
+                whatsappLink.href = `https://wa.me/5511987654321?text=${message}`;
+            }
+        }
+
+        // Language switcher listeners
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+
+        // Scroll Reveal Animation with Intersection Observer
+        function setupScrollReveal() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            document.querySelectorAll('.reveal').forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // GSAP Smooth Scroll Animations
+        function setupGSAPAnimations() {
+            gsap.utils.toArray('.member-card').forEach((element) => {
+                gsap.to(element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse'
+                    },
+                    duration: 0.6,
+                    opacity: 1,
+                    y: 0
+                });
+            });
+
+            gsap.utils.toArray('.playlist-link').forEach((element) => {
+                gsap.to(element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse'
+                    },
+                    duration: 0.6,
+                    opacity: 1,
+                    scale: 1
+                });
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    if (typeof gsap !== 'undefined' && typeof ScrollToPlugin !== 'undefined') {
+                        gsap.to(window, {
+                            duration: 0.8,
+                            scrollTo: {
+                                y: target,
+                                offsetY: 80
+                            },
+                            ease: 'power2.inOut'
+                        });
+                    } else {
+                        // Fallback: native smooth scroll
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            setLanguage(currentLanguage);
+            setupScrollReveal();
+            setupGSAPAnimations();
+        });
+
+        // Re-initialize scroll reveal on page load
+        setupScrollReveal();
+    </script>
+</body>
+</html>
