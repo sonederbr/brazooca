@@ -6,6 +6,14 @@
   <title>Brazooca Rock Club | Rock Brasileiro na Europa</title>
   <meta name="description" content="Projeto de exportação cultural que leva o icônico rock brasileiro dos anos 80 e 90 aos palcos europeus. Shows vibrantes e nostálgicos.">
   <link rel="canonical" href="https://www.brazoocarockclub.com">
+  
+  <!-- DNS Prefetch & Preconnect for performance -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+  <link rel="dns-prefetch" href="https://img.youtube.com">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
@@ -29,10 +37,11 @@
   <meta property="twitter:description" content="Projeto de exportação cultural que leva o icônico rock brasileiro dos anos 80 e 90 aos palcos europeus.">
   <meta property="twitter:image" content="assets/images/hero-background.png">
 
-  <!-- Fonts -->
+  <!-- Fonts - Preload critical fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Tailwind & Lucide -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -62,7 +71,8 @@
     }
   </script>
   <style>
-    body { font-family: 'Roboto', sans-serif; background-color: #2B2B2D; color: #E6D3A5; }
+    /* Critical CSS - Inline to avoid render blocking */
+    body { font-family: 'Roboto', sans-serif; background-color: #2B2B2D; color: #E6D3A5; margin: 0; }
     h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
     .font-display { font-family: 'Anton', sans-serif; }
     
@@ -90,11 +100,18 @@
     /* Smooth scroll */
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
     
-    /* Scroll padding to account for fixed header */
-    html {
-      scroll-padding-top: 80px;
+    /* YouTube facade overlay */
+    .youtube-facade {
+      position: relative;
+    }
+    
+    /* Improve font rendering */
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
   </style>
 </head>
@@ -105,7 +122,7 @@
     <div class="container mx-auto px-4 h-20 flex items-center justify-between">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 group">
-        <img src="assets/logo.webp" alt="Brazooca Logo" class="w-10 h-10 rounded-full border-2 border-brand-beige group-hover:bg-brand-darkRed transition-colors" />
+        <img src="assets/logo.webp" alt="Brazooca Logo" class="w-10 h-10 rounded-full border-2 border-brand-beige group-hover:bg-brand-darkRed transition-colors" width="40" height="40" />
         <span class="font-display text-2xl tracking-wider text-brand-beige group-hover:text-white transition-colors">
           BRAZOOCA <span class="text-brand-red">ROCK CLUB</span>
         </span>
@@ -127,11 +144,11 @@
             Contratar Agora
         </a>
         <!-- Mobile Contact Link -->
-        <a href="https://wa.me/351913525811" target="_blank" rel="noopener noreferrer" class="md:hidden text-brand-beige hover:text-brand-red transition-colors">
+        <a href="https://wa.me/351913525811" target="_blank" rel="noopener noreferrer" aria-label="Contatar via WhatsApp" class="md:hidden text-brand-beige hover:text-brand-red transition-colors">
             <svg class="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
         <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-brand-beige hover:text-brand-red">
+        <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação" class="md:hidden text-brand-beige hover:text-brand-red">
           <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
       </div>
@@ -143,7 +160,7 @@
     <div class="container mx-auto px-4 h-full flex flex-col">
       <div class="flex items-center justify-between h-20">
         <a href="/" class="flex items-center gap-2 group">
-          <img src="assets/logo.webp" alt="Brazooca Logo" class="w-10 h-10 rounded-full border-2 border-brand-beige group-hover:bg-brand-darkRed transition-colors" />
+          <img src="assets/logo.webp" alt="Brazooca Logo" class="w-10 h-10 rounded-full border-2 border-brand-beige group-hover:bg-brand-darkRed transition-colors" width="40" height="40" />
           <span class="font-display text-2xl tracking-wider text-brand-beige group-hover:text-white transition-colors">
             BRAZOOCA <span class="text-brand-red">ROCK CLUB</span>
           </span>
@@ -187,6 +204,8 @@
       class="w-full h-full object-cover opacity-40"
       loading="eager"
       fetchpriority="high"
+      width="1920"
+      height="1080"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-[#000000]/80 via-[#2B2B2D]/60 to-[#2B2B2D]"></div>
   </div>
@@ -237,6 +256,8 @@
             alt="Nostalgia Rock Anos 80"
             class="relative w-full rounded-sm shadow-xl border-4 border-[#2B2B2D] object-cover"
             loading="lazy"
+            width="800"
+            height="600"
           />
         </div>
       </div>
@@ -289,6 +310,8 @@
             alt="Agnes Lima"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
             loading="lazy"
+            width="869"
+            height="1152"
           />
         </div>
         <h3 class="text-xl font-bold text-[#E6D3A5] uppercase">Agnes Lima</h3>
@@ -307,6 +330,8 @@
             alt="Marinho Ponci"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
             loading="lazy"
+            width="869"
+            height="1152"
           />
         </div>
         <h3 class="text-xl font-bold text-[#E6D3A5] uppercase">Marinho Ponci</h3>
@@ -325,6 +350,8 @@
             alt="Hezinho Fernandes"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
             loading="lazy"
+            width="869"
+            height="1152"
           />
         </div>
         <h3 class="text-xl font-bold text-[#E6D3A5] uppercase">Hezinho Fernandes</h3>
@@ -343,6 +370,8 @@
             alt="Guilherme Cruz"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
             loading="lazy"
+            width="869"
+            height="1152"
           />
         </div>
         <h3 class="text-xl font-bold text-[#E6D3A5] uppercase">Guilherme Cruz</h3>
@@ -358,11 +387,17 @@
       <p class="text-lg opacity-90 max-w-2xl mx-auto">Confira trechos das nossas apresentações ao vivo e sinta a vibração do rock brasileiro.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#C83A32]">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/VG_MKjzpXms" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#C83A32] relative group cursor-pointer youtube-facade" data-video-id="VG_MKjzpXms">
+        <img src="https://img.youtube.com/vi/VG_MKjzpXms/maxresdefault.jpg" alt="Video thumbnail" class="w-full h-full object-cover" width="1280" height="720" loading="lazy">
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
+          <svg class="w-20 h-20 text-red-600 group-hover:scale-110 transition-transform" viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="currentColor"></path><path d="M 45,24 27,14 27,34" fill="white"></path></svg>
+        </div>
       </div>
-      <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#3C6F87]">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/DPC7kPQ2fOc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#3C6F87] relative group cursor-pointer youtube-facade" data-video-id="DPC7kPQ2fOc">
+        <img src="https://img.youtube.com/vi/DPC7kPQ2fOc/maxresdefault.jpg" alt="Video thumbnail" class="w-full h-full object-cover" width="1280" height="720" loading="lazy">
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
+          <svg class="w-20 h-20 text-red-600 group-hover:scale-110 transition-transform" viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="currentColor"></path><path d="M 45,24 27,14 27,34" fill="white"></path></svg>
+        </div>
       </div>
     </div>
     <div class="text-center mt-12">
@@ -769,13 +804,13 @@
             Levando a energia e a rebeldia do rock brasileiro dos anos 80 e 90 para os palcos da Europa. Uma viagem no tempo inesquecível.
           </p>
           <div class="flex gap-4">
-            <a href="https://www.instagram.com/brazooca_rock_club/" target="_blank" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
+            <a href="https://www.instagram.com/brazooca_rock_club/" target="_blank" aria-label="Instagram do Brazooca Rock Club" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
               <i data-lucide="instagram" class="w-5 h-5"></i>
             </a>
-            <a href="https://www.facebook.com/people/Brazooca-Rock-Club/61574571370023/" target="_blank" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
+            <a href="https://www.facebook.com/people/Brazooca-Rock-Club/61574571370023/" target="_blank" aria-label="Facebook do Brazooca Rock Club" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
               <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UCilNY3maRtUE04CbOZWnQfA" target="_blank" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
+            <a href="https://www.youtube.com/channel/UCilNY3maRtUE04CbOZWnQfA" target="_blank" aria-label="Canal do YouTube do Brazooca Rock Club" class="w-10 h-10 rounded bg-brand-graphite flex items-center justify-center hover:bg-brand-red hover:text-white transition-colors">
               <i data-lucide="youtube" class="w-5 h-5"></i>
             </a>
           </div>
@@ -834,9 +869,34 @@
   </footer>
 
   <script>
-    lucide.createIcons();
+    // Wait for DOM and all resources to be ready
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Lucide icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
 
-    (function () {
+      // YouTube Facade - Load videos only when clicked
+      (function() {
+        document.querySelectorAll('.youtube-facade').forEach(function(el) {
+          el.addEventListener('click', function() {
+            const videoId = this.getAttribute('data-video-id');
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('class', 'w-full h-full');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+            iframe.setAttribute('title', 'YouTube video player');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('frameborder', '0');
+            this.innerHTML = '';
+            this.appendChild(iframe);
+            this.classList.remove('cursor-pointer');
+          });
+        });
+      })();
+
+      // Mobile menu functionality
+      (function () {
       const btn = document.getElementById('mobile-menu-button');
       const closeBtn = document.getElementById('mobile-menu-close');
       const menu = document.getElementById('mobile-menu');
@@ -961,6 +1021,8 @@
         });
       });
     })();
+    
+    }); // End DOMContentLoaded
   </script>
 </body>
 </html>
