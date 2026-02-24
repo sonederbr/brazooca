@@ -9,6 +9,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Ignore .DS_Store anywhere (nested paths)
+**/.DS_Store
+
 # Logs
 *.log
 
