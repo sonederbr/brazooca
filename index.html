@@ -86,6 +86,16 @@
       from { transform: scaleX(0); }
       to { transform: scaleX(1); }
     }
+    
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Scroll padding to account for fixed header */
+    html {
+      scroll-padding-top: 80px;
+    }
   </style>
 </head>
 <body class="flex flex-col min-h-screen bg-brand-graphite text-brand-beige selection:bg-brand-red selection:text-white">
@@ -905,6 +915,51 @@
       
       // Run immediately
       setActiveLink();
+    })();
+
+    // Smooth scroll to sections with header offset
+    (function () {
+      const headerHeight = 80; // Height of fixed header
+      const allLinks = document.querySelectorAll('a[href^="#"]');
+      
+      allLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          
+          // Skip if it's just '#' or empty
+          if (!href || href === '#') return;
+          
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+          
+          if (targetSection) {
+            e.preventDefault();
+            
+            // Calculate position with offset
+            const targetPosition = targetSection.offsetTop - headerHeight;
+            
+            // Smooth scroll to target
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+            
+            // Update URL without jumping
+            if (history.pushState) {
+              history.pushState(null, null, href);
+            }
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+              document.documentElement.style.overflow = '';
+              const btn = document.getElementById('mobile-menu-button');
+              if (btn) btn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
     })();
   </script>
 </body>
