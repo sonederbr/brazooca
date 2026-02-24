@@ -57,6 +57,27 @@
     body { font-family: 'Roboto', sans-serif; background-color: #2B2B2D; color: #E6D3A5; }
     h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
     .font-display { font-family: 'Anton', sans-serif; }
+    
+    /* Active menu link styles */
+    nav a.active {
+      color: #C83A32 !important;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #C83A32;
+      animation: slideIn 0.3s ease-out;
+    }
+    @keyframes slideIn {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
   </style>
 </head>
 <body class="flex flex-col min-h-screen bg-brand-graphite text-brand-beige selection:bg-brand-red selection:text-white">
@@ -830,6 +851,52 @@
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeMenu();
       });
+    })();
+
+    // Active menu link based on scroll position
+    (function () {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+      const mobileNavLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
+      
+      function setActiveLink() {
+        let currentSection = '';
+        const scrollPosition = window.scrollY + 100; // Offset for header
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        
+        // Update desktop nav
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+          }
+        });
+        
+        // Update mobile nav
+        mobileNavLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+      
+      // Run on scroll
+      window.addEventListener('scroll', setActiveLink);
+      
+      // Run on page load
+      window.addEventListener('load', setActiveLink);
+      
+      // Run immediately
+      setActiveLink();
     })();
   </script>
 </body>
