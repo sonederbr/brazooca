@@ -63,10 +63,8 @@
     <header class="w-full bg-[#1E3842] border-b-4 border-[#C83A32] sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Area -->
-            <a href="#" class="flex items-center gap-2 group">
-                <div class="w-10 h-10 bg-[#E6D3A5] rounded-full flex items-center justify-center text-[#1E3842]">
-                    <i data-lucide="music" class="w-6 h-6"></i>
-                </div>
+            <a href="./index.html" class="flex items-center gap-2 group" aria-label="Ir para o início">
+                <img src="./assets/logo.webp" alt="Brazooca Rock Club" class="w-10 h-10 object-contain rounded-full">
                 <div class="flex flex-col">
                     <span class="text-2xl font-bold leading-none tracking-wider text-[#E6D3A5]">BRAZOOCA</span>
                     <span class="text-sm font-bold leading-none tracking-widest text-[#C83A32]">ROCK CLUB</span>
@@ -90,14 +88,25 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-[#E6D3A5] hover:text-[#C83A32]">
+            <button id="mobile-menu-toggle" class="md:hidden text-[#E6D3A5] hover:text-[#C83A32]" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
                 <i data-lucide="menu" class="w-8 h-8"></i>
             </button>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="md:hidden hidden absolute right-4 top-full mt-2 bg-[#1E3842] border border-[#3C6F87] rounded-lg p-4 shadow-lg w-64">
+                <nav class="flex flex-col gap-3">
+                    <a href="#manifesto" class="text-[#E6D3A5] hover:text-[#C83A32] font-semibold uppercase tracking-wide">A Banda</a>
+                    <a href="#repertorio" class="text-[#E6D3A5] hover:text-[#C83A32] font-semibold uppercase tracking-wide">Repertório</a>
+                    <a href="#shows" class="text-[#E6D3A5] hover:text-[#C83A32] font-semibold uppercase tracking-wide">Shows</a>
+                    <a href="#midia" class="text-[#E6D3A5] hover:text-[#C83A32] font-semibold uppercase tracking-wide">Mídia</a>
+                    <a href="https://wa.me/351913525811" target="_blank" rel="noopener" class="btn-primary px-4 py-2 rounded font-bold uppercase tracking-wider mt-2 text-center">Orçamento</a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="flex-grow"><section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#1E3842]">
+    <main class="flex-grow"><section id="manifesto" class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#1E3842]">
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
     <img data-ai="generate" data-slot="hero-background" data-prompt="High energy rock concert stage with dramatic lighting, silhouette of a band performing, brazilian rock 80s vibe, vintage texture overlay" data-ar="16:9" src="./assets/images/hero-background.png" alt="Palco de show de rock vibrante" class="w-full h-full object-cover opacity-40" loading="eager" width="1920" height="1080">
@@ -167,7 +176,7 @@
 
     </div>
   </div>
-</section><section class="py-20 bg-[#1E3842] text-[#E6D3A5]">
+</section><section id="members" class="py-20 bg-[#1E3842] text-[#E6D3A5]">
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-6xl font-black text-[#E6D3A5] mb-4 uppercase">
@@ -227,7 +236,7 @@
 
     </div>
   </div>
-</section><section id="video" class="bg-[#1E3842] py-20 text-[#E6D3A5]">
+</section><section id="midia" class="bg-[#1E3842] py-20 text-[#E6D3A5]">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wider">Nossa Performance</h2>
@@ -236,15 +245,15 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
       <!-- Video Placeholder 1 -->
       <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#E6D3A5] relative group">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
       </div>
       <!-- Video Placeholder 2 -->
       <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-2 border-[#E6D3A5] relative group">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
       </div>
     </div>
   </div>
-</section><section id="playlist" class="bg-[#8E1F1F] py-24 text-[#E6D3A5] relative overflow-hidden">
+</section><section id="repertorio" class="bg-[#8E1F1F] py-24 text-[#E6D3A5] relative overflow-hidden">
   <div class="container mx-auto px-4 relative z-10">
     <div class="flex flex-col lg:flex-row items-center gap-12">
       <div class="w-full lg:w-1/2">
@@ -277,7 +286,7 @@
       </div>
     </div>
   </div>
-</section><section id="formats" class="bg-[#000000] py-24 text-white">
+</section><section id="shows" class="bg-[#000000] py-24 text-white">
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-5xl font-bold text-[#E6D3A5] mb-4 uppercase">Formatos de Show</h2>
@@ -478,7 +487,7 @@
       </div>
     </div>
   </div>
-</section><section id="cta" class="relative py-20 overflow-hidden bg-[#1E3842] text-[#E6D3A5]">
+</section><section id="contato" class="relative py-20 overflow-hidden bg-[#1E3842] text-[#E6D3A5]">
   <div class="container mx-auto px-4 relative z-10">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Contact Info & Pitch -->
@@ -545,9 +554,9 @@
                         Levando a energia do Rock Brasileiro dos anos 80 e 90 para os palcos da Europa.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="hover:text-[#C83A32] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="#" class="hover:text-[#C83A32] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="hover:text-[#C83A32] transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-[#C83A32] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-[#C83A32] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" class="hover:text-[#C83A32] transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
                     </div>
                 </div>
 
@@ -555,7 +564,7 @@
                 <div>
                     <h4 class="text-[#C83A32] font-bold uppercase mb-4 tracking-wider">Navegação</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="./index.html" class="hover:text-white transition-colors">Início</a></li>
                         <li><a href="#manifesto" class="hover:text-white transition-colors">Sobre a Banda</a></li>
                         <li><a href="#repertorio" class="hover:text-white transition-colors">Setlist</a></li>
                         <li><a href="#shows" class="hover:text-white transition-colors">Formatos de Show</a></li>
@@ -600,4 +609,34 @@
     </footer>
 
 
-</body></html>
+    <!-- Mobile menu script -->
+    <script>
+        // Toggle mobile menu visibility and update aria-expanded
+        (function(){
+            const btn = document.getElementById('mobile-menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+            if (!btn || !menu) return;
+            btn.addEventListener('click', function(){
+                const isOpen = !menu.classList.contains('hidden');
+                if (isOpen) {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                } else {
+                    menu.classList.remove('hidden');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+                // re-init lucide icons if available
+                if (window.lucide && typeof window.lucide === 'object' && typeof window.lucide.replace === 'function') {
+                    window.lucide.replace();
+                }
+            });
+            // close menu when clicking outside
+            document.addEventListener('click', function(e){
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+    </script>
+ </body></html>
