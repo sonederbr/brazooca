@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Allow: /index.html
-Allow: /sampletologo.jpeg
 Disallow: /.git/
 
 Sitemap: https://brazooca.com/sitemap.xml
